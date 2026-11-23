@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "name": "省錢小禾",
+    "intro": "午餐只有五十元的學生",
+    "budget": 50,
+    "wants": ["招牌鍋貼", "豆漿"],
+    "hates": null,
+    "days": [1, 2, 4],
+    "count": 8,
+    "lines": {
+      "bought": "五十元也能買到午餐！",
+      "hated_on_menu": "今天換一家吃吧。",
+      "not_on_menu": "今天沒賣我想吃的。",
+      "sold_out": "下次早一點來排隊。",
+      "too_expensive": "超過我的午餐預算了。"
+    }
+  },
+  {
+    "name": "社團阿沐",
+    "intro": "社課前想吃點熱食的學生",
+    "budget": 90,
+    "wants": ["韭菜鍋貼", "酸辣湯"],
+    "hates": null,
+    "days": [2, 3, 5],
+    "count": 10,
+    "lines": {
+      "bought": "吃點熱的再去社課。",
+      "hated_on_menu": "今天的菜單不合我口味。",
+      "not_on_menu": "想吃的熱食沒上架。",
+      "sold_out": "晚來一步就賣完了。",
+      "too_expensive": "得留點錢繳社費。"
+    }
+  },
+  {
+    "name": "晚自習小岑",
+    "intro": "晚自習前來買晚餐的學生",
+    "budget": 100,
+    "wants": ["玉米鍋貼", "紅茶"],
+    "hates": "韭菜鍋貼",
+    "days": [1, 3, 5],
+    "count": 7,
+    "lines": {
+      "bought": "買到了，快去晚自習。",
+      "hated_on_menu": "有韭菜鍋貼，我去別家。",
+      "not_on_menu": "今天找不到我想吃的。",
+      "sold_out": "明天得提早來買。",
+      "too_expensive": "這個價錢超出預算了。"
+    }
+  }
+]
