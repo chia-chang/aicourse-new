@@ -1,9 +1,21 @@
 {
-  "//": "專案層 MCP 設定。用 Claude Code 打開這個資料夾時會問你是否啟用；啟用後輸入 /mcp 應該看到 chrome-devtools。它讓 AI 能自己打開 http://localhost:5180、操作遊戲、讀 console、截圖。",
+  "//": "專案層 MCP 設定。用 Claude Code 打開這個資料夾時會問你是否啟用；啟用後輸入 /mcp 應該看到 chrome-devtools。它讓 AI 能自己打開 http://localhost:5180、操作遊戲、讀 console、截圖。Windows 需透過 cmd.exe /c 呼叫 npx；--isolated 使用暫時的瀏覽器設定檔，避免和你正在開的 Chrome 衝突；需先在 web-lab 執行 npm run dev。",
   "mcpServers": {
     "chrome-devtools": {
-      "command": "npx",
-      "args": ["chrome-devtools-mcp@latest"]
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": ["/c", "npx", "-y", "chrome-devtools-mcp@latest", "--isolated"],
+      "env": {
+        "CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS": "1"
+      }
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-memory@2.2.1"],
+      "env": {
+        "MEMORY_FILE_PATH": "C:\\Users\\NTPU\\Downloads\\ai-course-gyoza-game-main\\.claude\\memory.jsonl"
+      }
     }
   }
 }

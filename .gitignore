@@ -6,6 +6,8 @@ dist/
 
 # Claude Code 的個人設定不進 Git；專案的 skills 與 agents 要進 Git
 .claude/settings.local.json
+# Memory MCP 的知識圖譜資料不進 Git
+.claude/memory.jsonl
 
 # 根目錄沒有 package.json，這裡出現的 lock 檔是工具副產物
 /package-lock.json
